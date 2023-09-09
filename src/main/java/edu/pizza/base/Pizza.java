@@ -66,6 +66,6 @@ public class Pizza {
                 e.printStackTrace();
             }
         }
-        System.out.println("The Pizza is ready!");
+        System.out.println("The " + name + " is ready!");
     }
 }

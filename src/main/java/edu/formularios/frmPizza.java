@@ -47,6 +47,16 @@ public class frmPizza {
         btbPreparPizza.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+                if (txtPizza.getText().isEmpty()){
+                    JOptionPane.showMessageDialog(null, "Debe ingresar el nombre de la pizza");
+                    return;
+                }
+                if (lista1.getModel().getSize() == 0){
+                    JOptionPane.showMessageDialog(null, "Debe ingresar al menos un ingrediente");
+                    return;
+                }
+
                 Pizza pizza = new Pizza(txtPizza.getText());
                 Topping topi;
                 for (int i = 0; i< lista1.getModel().getSize(); i++){
