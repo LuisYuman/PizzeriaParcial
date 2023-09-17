@@ -37,7 +37,6 @@ public class Pizza {
     }
 
     public List<Topping> getToppings() {
-
         return Collections.unmodifiableList(new ArrayList<>(toppings));
     }
 
@@ -51,7 +50,7 @@ public class Pizza {
 
     @Override
     public String toString() {
-        return "Pizza{" + "name='" + name + '\'' + ", price=" + ", toppings=" + toppings + '}';
+        return name;
     }
 
     public void prepare() {

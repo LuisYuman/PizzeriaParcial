@@ -1,6 +1,7 @@
 package edu.pizza;
 
 
+import edu.formularios.frmFinal;
 import edu.formularios.frmPizza;
 import edu.pizza.base.Pizza;
 import edu.pizza.base.Topping;
@@ -12,8 +13,8 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
 
-        JFrame frame = new JFrame("frmPizza");
-        frame.setContentPane(new frmPizza().getjPanelPrincipal());
+        JFrame frame = new JFrame("Pizzeria El Gran Sabor");
+        frame.setContentPane(new frmFinal().getjPanelPrincipal());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
@@ -31,14 +32,6 @@ public class Main {
        // vuelvan a preparar
        /* pizza.removeTopping(1);
         pizza.prepare();*/
-
-
-
-
-
-
-
-
 
 
 //        Ejercicio 2 heredar
